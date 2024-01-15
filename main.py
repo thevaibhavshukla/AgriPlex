@@ -27,5 +27,5 @@ def products_html(id):
     return render_template('products.html', productData = productData)
 
 if __name__ == '__main__':
-	app.debug = True
+	# app.debug = True
 	app.run()
