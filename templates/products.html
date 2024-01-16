@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
@@ -74,7 +74,7 @@
                         <a href="tel:+919193363600"><span class="icon-phone-call"></span>+91 91933 63600</a>
                     </div>
                     <div class="topbar-one__middle">
-                        <a href="index.html" class="main-nav__logo">
+                        <a href="/" class="main-nav__logo">
                             <img src="{{url_for('static',filename='/assets/images/resources/agroplex-logo.png')}}"
                                 class="main-logo" alt="Awesome Image" />
                         </a>
@@ -107,16 +107,16 @@
                         <div class="main-nav__main-navigation">
                             <ul class=" main-nav__navigation-box">
                                 <li class="navForScrollEffect dropdown current">
-                                    <a href="#home">Home</a>
+                                    <a href="/#home">Home</a>
                                 </li>
                                 <li class="navForScrollEffect dropdown">
-                                    <a href="#about">About Us</a>
+                                    <a href="/#about-us">About Us</a>
                                 </li>
                                 <li class="navForScrollEffect dropdown">
-                                    <a href="#products">Our Products</a>
+                                    <a href="/#products">Our Products</a>
                                 </li>
                                 <li class="navForScrollEffect">
-                                    <a href="#contact-us">Contact Us</a>
+                                    <a href="/#contact-us">Contact Us</a>
                                 </li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
@@ -141,15 +141,7 @@
         <section class="service_detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4">
-                        <div class="service_details_left">
 
-                            <ul class="list-unstyled service_all_list">
-                                <li><a href="/#products">All Products</a></li>
-                            </ul>
-
-                        </div>
-                    </div>
                     <div class="col-xl-8 col-lg-8">
                         <div class="service_details_right">
                             <div class="service_details_One_img">
@@ -160,103 +152,56 @@
                                 <h2>{{productData.name}}</h2>
                                 <p>{{productData.data}}</p>
 
-                                <p class="harvest_innovations_bottom_text">Beyond more stoic this along goodness hey
-                                    this this wow manatee mongoose one as since a far flustered impressive manifest far
-                                    crud opened inside owing punitively around forewent and after wasteful telling
-                                    sprang coldly and spoke less clients. Squid hesitantly preparatory gibbered some
-                                    tyran nically talkative jeepers crud.</p>
 
                             </div>
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6">
                                     <div class="service_details_single_img_box">
                                         <img src="{{ url_for('static', filename=productData.pageImgTwo) }}" alt="">
-                                        
+
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6">
                                     <div class="service_details_single_img_box">
                                         <img src="{{ url_for('static', filename=productData.pageImgTwo) }}" alt="">
-                                        
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="agriculture_solutions">
-                                <h3>Agriculture Solutions</h3>
-                                <p>Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui
-                                    dolorem ipsum quia quaed inventore veritatis et quasi architecto beatae vitae dicta
-                                    sunt explicabo. Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit
-                                    amet finibus eros. Lorem Ipsum is simply dummy text of the printing and typesetting
-                                    industry.</p>
-                            </div>
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-check"></i>Research beyond the business plan</li>
-                                <li><i class="fa fa-check"></i>Marketing options and rates</li>
-                                <li><i class="fa fa-check"></i>The ability to turnaround consulting</li>
-                                <li><i class="fa fa-check"></i>Help companies into more profitable</li>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="service_details_left">
+
+                            <ul class="list-unstyled service_all_list">
+                                <!-- <li class="active"><a href="/#products">All Products</a></li> -->
+                                <li><a href="/#products">All Products</a></li>
+                                <li><a href="/products/1">एग्री माइक्रोराजा</a></li>
+                                <li><a href="/products/2">एग्री फेरस सल्फेट</a></li>
+                                <li><a href="/products/3">एग्री मैग्नीशियम</a></li>
+                                <li><a href="/products/4">एग्री गोल्ड कैल्शियम</a></li>
+                                <li><a href="/products/5">एग्री फास्फेट प्रोम</a></li>
+                                <li><a href="/products/6">एग्री सल्फर (Sulphur 90% DP Powder)</a></li>
+                                <li><a href="/products/7">एग्री ग्रीन गोल्ड</a></li>
+                                <li><a href="/products/8">एग्री शक्ति गोल्ड (MICRO 6 0/0%)</a></li>
+                                <li><a href="/products/9">एग्री समृद्धि (MICRO 3%)</a></li>
+                                <li><a href="/products/10">एग्री फसल शक्ति (MICRO 10%)</a></li>
+                                <li><a href="/products/11">एग्री बायो पोटाश</a></li>
                             </ul>
 
-                            <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
-                                <div class="accrodion active">
-                                    <div class="accrodion-title">
-                                        <h4>Why are your tours so expensive?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>There are many variations of passages of available but majority have
-                                                alteration in some by inject humour or random words. Lorem ipsum dolor
-                                                sit amet, error insolens reprimique no quo, ea pri verterem phaedr vel
-                                                ea iisque aliquam.</p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                                <div class="accrodion ">
-                                    <div class="accrodion-title">
-                                        <h4>Which payment methods are acceptable?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>There are many variations of passages of available but majority have
-                                                alteration in some by inject humour or random words. Lorem ipsum dolor
-                                                sit amet, error insolens reprimique no quo, ea pri verterem phaedr vel
-                                                ea iisque aliquam.</p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                                <div class="accrodion">
-                                    <div class="accrodion-title">
-                                        <h4>How to book the new tour for 2 persons?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>There are many variations of passages of available but majority have
-                                                alteration in some by inject humour or random words. Lorem ipsum dolor
-                                                sit amet, error insolens reprimique no quo, ea pri verterem phaedr vel
-                                                ea iisque aliquam.</p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                                <div class="accrodion">
-                                    <div class="accrodion-title">
-                                        <h4>All taxes are included in the booking prices?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>There are many variations of passages of available but majority have
-                                                alteration in some by inject humour or random words. Lorem ipsum dolor
-                                                sit amet, error insolens reprimique no quo, ea pri verterem phaedr vel
-                                                ea iisque aliquam.</p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                            </div>
+
+
+
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer class="site-footer">
+        <footer class=" site-footer">
             <div class="site-footer_farm_image"><img
                     src="{{url_for('static',filename='/assets/images/resources/site-footer-farm.png')}}"
                     alt="Farm Image"></div>
@@ -265,16 +210,20 @@
                     <div class="col-xl-6 col-lg-6 col-md-6">
                         <div class="footer-widget__column footer-widget__about wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__title">
-                                <h3>About</h3>
+                                <h3>एग्रीप्लेक्स</h3>
                             </div>
                             <div class="footer-widget_about_text">
-                                <p>Lorem ipsum dolor sit amet, adipiscing elit. Nulla placerat posuere dui. Pellentesque
-                                    venenatis sem non lacus ac auctor.</p>
+                                <p>एग्रीप्लेक्स एक प्रमुख कृषि उत्पादों कंपनी है जो अपने गहन अनुभव और परिश्रम से
+                                    किसानों
+                                    को समृद्धि और सफलता की ऊंचाइयों तक पहुंचाने का संकल्प करती है। हम गर्व से कह
+                                    सकते
+                                    हैं कि हम एक विश्वसनीय और सुरक्षित खेती से जुड़े नेतृत्व के साथ आपके साथ हैं।
+                                </p>
                             </div>
                             <form>
                                 <div class="footer_input-box">
-                                    <input type="Email" placeholder="Email Address">
-                                    <button type="submit" class="button"><i class="fa fa-check"></i></button>
+                                    <!-- <input type="Email" placeholder="Email Address"> -->
+                                    <!-- <button type="submit" class="button"><i class="fa fa-check"></i></button> -->
                                 </div>
                             </form>
                         </div>
@@ -289,8 +238,8 @@
                                 <p>Agriplex Agro Private Limited<br>Kh. No. 666, Village Kaniya Kalyanpur
                                     Pargana Tehsil, <br> Hapur - 245101
                                 </p>
-                                <a href="mailto:needhelp@agrikol.com">needhelp@agrikol.com</a><br>
-                                <a href="tel:+919193363600">9193363600</a>
+                                <a href="#">needhelp@agriplex.com</a><br>
+                                <a href="tel:+919193363600">+91 &nbsp; 9193363600</a>
                                 <div class="site-footer__social">
                                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -307,7 +256,7 @@
         <div class="site-footer_bottom">
             <div class="container">
                 <div class="site-footer_bottom_copyright">
-                    <p>@ All copyright 2020, <a href="#">Layerdrops.com</a></p>
+                    <p>Designed By, <a href="https://crrovers.com" target="_blank">Creative Rovers</a></p>
                 </div>
                 <div class="site-footer_bottom_menu">
                     <ul class="list-unstyled">

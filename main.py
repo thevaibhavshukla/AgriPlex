@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index_html():
-	return render_template('index.html', start = 0, productsData = productsData)
+	return render_template('index.html', productsData = productsData)
 
 @app.route('/products/<id>')
 def products_html(id):
@@ -27,5 +27,5 @@ def products_html(id):
     return render_template('products.html', productData = productData)
 
 if __name__ == '__main__':
-	# app.debug = True
+	app.debug = True
 	app.run()
